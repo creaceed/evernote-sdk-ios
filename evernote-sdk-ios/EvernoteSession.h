@@ -126,6 +126,9 @@ typedef NS_ENUM(NSInteger, ENSessionState) {
 /** The business user object. */
 @property (nonatomic,strong) EDAMUser* businessUser;
 
+/** Automatically trigger login on expired tokens. */
+@property (nonatomic,strong) BOOL shouldTriggerLogin;
+
 ///---------------------------------------------------------------------------------------
 /// @name Session handling
 ///---------------------------------------------------------------------------------------

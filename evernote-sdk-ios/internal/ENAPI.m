@@ -233,7 +233,7 @@ typedef void (^EvernoteErrorBlock) (NSError *error);
     if([EvernoteSession isTokenExpiredWithError:error]) {
         [self.session logout];
         UIViewController* topVC = [UIApplication sharedApplication].keyWindow.rootViewController;
-        if(!topVC.presentedViewController && topVC.isViewLoaded) {
+        if(!topVC.presentedViewController && topVC.isViewLoaded && [[EvernoteSession sharedSession] shouldTriggerLogin]) {
             didTriggerAuth = YES;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.session authenticateWithViewController:topVC completionHandler:^(NSError *authError) {
