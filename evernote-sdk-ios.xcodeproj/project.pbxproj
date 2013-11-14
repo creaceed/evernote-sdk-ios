@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B0DE6A61571978C00D7347A /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0DE6A41571978C00D7347A /* ENOAuthViewController.h */; };
+		0B0DE6A61571978C00D7347A /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0DE6A41571978C00D7347A /* ENOAuthViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B2B9D621544944800E5BD44 /* EvernoteUserStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2B9D601544944800E5BD44 /* EvernoteUserStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B2B9D631544944800E5BD44 /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B9D611544944800E5BD44 /* EvernoteUserStore.m */; };
 		0B2B9D641544944800E5BD44 /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B9D611544944800E5BD44 /* EvernoteUserStore.m */; };
@@ -56,13 +56,13 @@
 		0B943F831525015500DB20A3 /* TTransportException.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B943F4E1525015500DB20A3 /* TTransportException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B943F841525015500DB20A3 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B943F4F1525015500DB20A3 /* TTransportException.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		0B943F851525015500DB20A3 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B943F4F1525015500DB20A3 /* TTransportException.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		0B98592815432592007D7D37 /* ENAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592215432592007D7D37 /* ENAPI.h */; };
+		0B98592815432592007D7D37 /* ENAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592215432592007D7D37 /* ENAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B98592915432592007D7D37 /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592315432592007D7D37 /* ENAPI.m */; };
 		0B98592A15432592007D7D37 /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592315432592007D7D37 /* ENAPI.m */; };
-		0B98592B15432592007D7D37 /* ENCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592415432592007D7D37 /* ENCredentials.h */; };
+		0B98592B15432592007D7D37 /* ENCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592415432592007D7D37 /* ENCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B98592C15432592007D7D37 /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592515432592007D7D37 /* ENCredentials.m */; };
 		0B98592D15432592007D7D37 /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592515432592007D7D37 /* ENCredentials.m */; };
-		0B98592E15432592007D7D37 /* ENCredentialStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592615432592007D7D37 /* ENCredentialStore.h */; };
+		0B98592E15432592007D7D37 /* ENCredentialStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B98592615432592007D7D37 /* ENCredentialStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B98592F15432592007D7D37 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592715432592007D7D37 /* ENCredentialStore.m */; };
 		0B98593015432592007D7D37 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B98592715432592007D7D37 /* ENCredentialStore.m */; };
 		0BB3D1B11524ED96001C4534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D1B01524ED96001C4534 /* Foundation.framework */; };
@@ -103,7 +103,6 @@
 		0BDBBC671550A3A4003E6681 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDBBC5E1550A3A4003E6681 /* libOCMock.a */; };
 		0BDBBC681550A3A4003E6681 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBBC5F1550A3A4003E6681 /* LICENSE */; };
 		0BF0CF81152E25E1003D6115 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF0CF7F152E25E1003D6115 /* SSKeychain.h */; };
-		0BF0CF82152E25E1003D6115 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0CF80152E25E1003D6115 /* SSKeychain.m */; };
 		0BF0CF85152E2601003D6115 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
 		0BF0CF8A152E31BA003D6115 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0CF80152E25E1003D6115 /* SSKeychain.m */; };
 		0BF0CF8C152E31CC003D6115 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
@@ -222,7 +221,7 @@
 		A9C555061671539A006E0020 /* EvernoteUserStore+Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C5550416715399006E0020 /* EvernoteUserStore+Extras.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9C555071671539A006E0020 /* EvernoteUserStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C555051671539A006E0020 /* EvernoteUserStore+Extras.m */; };
 		A9C555081671539A006E0020 /* EvernoteUserStore+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C555051671539A006E0020 /* EvernoteUserStore+Extras.m */; };
-		A9D166C5169151D600043DA0 /* TObjective-C.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D166C4169151D600043DA0 /* TObjective-C.h */; };
+		A9D166C5169151D600043DA0 /* TObjective-C.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D166C4169151D600043DA0 /* TObjective-C.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FDF718165C5C7200DC7E4B /* ENConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FDF716165C5C7100DC7E4B /* ENConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FDF719165C5C7200DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
 		A9FDF71B165C5D0300DC7E4B /* ENConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FDF717165C5C7100DC7E4B /* ENConstants.m */; };
@@ -1162,7 +1161,6 @@
 				0B943F741525015500DB20A3 /* THTTPClient.m in Sources */,
 				0B943F771525015500DB20A3 /* TMemoryBuffer.m in Sources */,
 				0B943F841525015500DB20A3 /* TTransportException.m in Sources */,
-				0BF0CF82152E25E1003D6115 /* SSKeychain.m in Sources */,
 				0B98592915432592007D7D37 /* ENAPI.m in Sources */,
 				0B98592C15432592007D7D37 /* ENCredentials.m in Sources */,
 				0B98592F15432592007D7D37 /* ENCredentialStore.m in Sources */,
