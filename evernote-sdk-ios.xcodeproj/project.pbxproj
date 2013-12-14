@@ -1393,6 +1393,7 @@
 		0BB3D1BB1524ED96001C4534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/evernote_sdk_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1409,6 +1410,7 @@
 		0BB3D1BC1524ED96001C4534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/evernote_sdk_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
