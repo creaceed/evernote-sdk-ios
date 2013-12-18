@@ -116,7 +116,7 @@ static NSString *kEN_NewNoteRequest_ReminderTime = @"mReminderTime";
 }
 
 - (uint32_t) totalRequestSize {
-  uint32_t result = [[self content] length];
+  uint32_t result = (uint32_t)[[self content] length];
   NSArray *attachments = self.resourceAttachments;
   for (ENResourceAttachment *anAttachment in attachments) {
     NSData *resourceData = [anAttachment resourceData];
@@ -132,7 +132,7 @@ static NSString *kEN_NewNoteRequest_ReminderTime = @"mReminderTime";
           NSLog(@"%s attributesOfItemAtPath:%@ error:%@", __PRETTY_FUNCTION__, filepath, attrError);
         }
         else {
-          result += [fileAttributes fileSize];
+          result += (uint32_t)[fileAttributes fileSize];
         }
       }
     }
