@@ -1057,7 +1057,8 @@
 		0BB3D1A41524ED96001C4534 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = n/a;
 			};
 			buildConfigurationList = 0BB3D1A71524ED96001C4534 /* Build configuration list for PBXProject "evernote-sdk-ios" */;
