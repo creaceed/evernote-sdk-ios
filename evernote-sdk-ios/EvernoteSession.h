@@ -82,6 +82,8 @@ typedef NS_ENUM(NSInteger, ENSessionState) {
 - (void)evernoteAppNotInstalled;
 @end
 
+extern NSString * const EvernoteSessionDidAuthenticatedUserNotification;
+
 /** The `EvernoteSession` class provides a centralized place for authentication and gives access to the `EvernoteNoteStore` and `EvernoteUserStore` objects. Every application must have exactly one instance of `EvernoteSession`. When an application is ready, the application:didFinishLaunchingWithOptions: function is called, where you should call the class method setSharedSessionHost:consumerKey:consumerSecret:supportedService: Thereafter you can access this object by invoking the sharedSession class method.
  */
 @interface EvernoteSession : NSObject <ENOAuthViewControllerDelegate,SKStoreProductViewControllerDelegate>

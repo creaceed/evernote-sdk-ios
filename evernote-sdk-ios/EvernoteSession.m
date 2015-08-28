@@ -40,6 +40,8 @@
 
 #define SCHEME @"https"
 
+NSString * const EvernoteSessionDidAuthenticatedUserNotification = @"EvernoteSessionDidAuthenticatedUserNotification";
+
 @interface EvernoteSession()
 
 @property (nonatomic, strong) UIViewController *viewController;
@@ -564,7 +566,7 @@
 
 - (void)handleDidBecomeActive{
     //Unexpected to calls to app delegate's applicationDidBecomeActive are
-    // handled by this method. 
+    // handled by this method.
     const ENSessionState state = self.state;
     
     if (state == ENSessionLoggedOut ||
@@ -720,7 +722,9 @@
         // use a formsheet on iPad
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             self.oauthViewController.modalPresentationStyle = UIModalPresentationFormSheet;
-            oauthNavController.modalPresentationStyle = UIModalPresentationFormSheet;
+            // UIModalPresentationCurrentContext is needed on the iPad for having the view lifecycle methods to be called
+            // on the presenting view controller (having a style UIModalPresentationFormSheet) when this sheet is presented/dismissed.
+            oauthNavController.modalPresentationStyle = UIModalPresentationCurrentContext;
         }
         [self.viewController presentViewController:oauthNavController animated:YES completion:^{
             ;
@@ -775,6 +779,13 @@
     }
     self.completionHandler = nil;
     self.viewController = nil;
+    
+    if (!error) {
+        // With iOS 9, we can't handle the authentification workflow using the completion block of - (void)authenticateWithViewController:completionHandler:.
+        // It's because applicationDidBecomeActive: is called when the URL Scheme Open Permission dialog is dismissed. When handleDidBecomeActive: is called,
+        // the completionHandler is called and then set to nil but the authentification workflow is not complete.
+        [[NSNotificationCenter defaultCenter] postNotificationName:EvernoteSessionDidAuthenticatedUserNotification object:self];
+    }
 }
 
 - (void) switchProfile {
