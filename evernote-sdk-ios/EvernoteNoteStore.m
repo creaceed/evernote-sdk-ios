@@ -249,7 +249,7 @@
 }
 
 - (void)untagAllWithGuid:(EDAMGuid)guid
-                 success:(void(^)())success
+                 success:(void(^)(void))success
                  failure:(void(^)(NSError *error))failure
 {
     [self invokeAsyncVoidBlock:^ {
@@ -760,7 +760,7 @@ withResourcesAlternateData:(BOOL)withResourcesAlternateData
 }
 
 - (void)emailNoteWithParameters:(EDAMNoteEmailParameters *)parameters
-                        success:(void(^)())success
+                        success:(void(^)(void))success
                         failure:(void(^)(NSError *error))failure
 {
     [self invokeAsyncVoidBlock:^ {
@@ -778,7 +778,7 @@ withResourcesAlternateData:(BOOL)withResourcesAlternateData
 }
 
 - (void)stopSharingNoteWithGuid:(EDAMGuid)guid
-                        success:(void(^)())success
+                        success:(void(^)(void))success
                         failure:(void(^)(NSError *error))failure
 {
     [self invokeAsyncVoidBlock:^ {

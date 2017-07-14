@@ -118,7 +118,7 @@ typedef void (^EvernoteErrorBlock) (NSError *error);
     return nil;
 }
 
-- (void)invokeAsyncBoolBlock:(BOOL(^)())block
+- (void)invokeAsyncBoolBlock:(BOOL(^)(void))block
                      success:(void(^)(BOOL val))success
                      failure:(void(^)(NSError *error))failure
 {
@@ -142,7 +142,7 @@ typedef void (^EvernoteErrorBlock) (NSError *error);
     });
 }
 
-- (void)invokeAsyncInt32Block:(int32_t(^)())block
+- (void)invokeAsyncInt32Block:(int32_t(^)(void))block
                       success:(void(^)(int32_t val))success
                       failure:(void(^)(NSError *error))failure
 {
@@ -167,7 +167,7 @@ typedef void (^EvernoteErrorBlock) (NSError *error);
 }
 
 // use id instead of NSObject* so block type-checking is happy
-- (void)invokeAsyncIdBlock:(id(^)())block
+- (void)invokeAsyncIdBlock:(id(^)(void))block
                    success:(void(^)(id))success
                    failure:(void(^)(NSError *error))failure
 {
@@ -191,8 +191,8 @@ typedef void (^EvernoteErrorBlock) (NSError *error);
     });
 }
 
-- (void)invokeAsyncVoidBlock:(void(^)())block
-                     success:(void(^)())success
+- (void)invokeAsyncVoidBlock:(void(^)(void))block
+                     success:(void(^)(void))success
                      failure:(void(^)(NSError *error))failure
 {
     dispatch_async(self.session.queue, ^(void) {

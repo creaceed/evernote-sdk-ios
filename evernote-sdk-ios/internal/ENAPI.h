@@ -45,17 +45,17 @@
 
 // asynchronously invoke the given blocks,
 // calling back to success/failure on the main threa.
-- (void)invokeAsyncBoolBlock:(BOOL(^)())block
+- (void)invokeAsyncBoolBlock:(BOOL(^)(void))block
                      success:(void(^)(BOOL val))success
                      failure:(void(^)(NSError *error))failure;
-- (void)invokeAsyncIdBlock:(id(^)())block
+- (void)invokeAsyncIdBlock:(id(^)(void))block
                    success:(void(^)(id))success
                    failure:(void(^)(NSError *error))failure;
-- (void)invokeAsyncInt32Block:(int32_t(^)())block
+- (void)invokeAsyncInt32Block:(int32_t(^)(void))block
                       success:(void(^)(int32_t val))success
                       failure:(void(^)(NSError *error))failure;
-- (void)invokeAsyncVoidBlock:(void(^)())block
-                     success:(void(^)())success
+- (void)invokeAsyncVoidBlock:(void(^)(void))block
+                     success:(void(^)(void))success
                      failure:(void(^)(NSError *error))failure;
 
 @end

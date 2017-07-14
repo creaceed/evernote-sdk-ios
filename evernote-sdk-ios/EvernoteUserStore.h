@@ -137,7 +137,7 @@
  @param failure Failure completion block.
  */
 - (void)revokeLongSessionWithAuthenticationToken:(NSString*)authenticationToken
-                                         success:(void(^)())success
+                                         success:(void(^)(void))success
                                          failure:(void(^)(NSError *error))failure;
 
 @end

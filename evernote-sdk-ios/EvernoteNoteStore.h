@@ -269,7 +269,7 @@
  @param failure Failure completion block.
  */
 - (void)untagAllWithGuid:(EDAMGuid)guid
-                 success:(void(^)())success
+                 success:(void(^)(void))success
                  failure:(void(^)(NSError *error))failure;
 
 /** Permanently deletes the tag with the provided GUID, if present.
@@ -964,7 +964,7 @@ withResourcesAlternateData:(BOOL)withResourcesAlternateData
  @param failure Failure completion block.
  */
 - (void)emailNoteWithParameters:(EDAMNoteEmailParameters *)parameters
-                        success:(void(^)())success
+                        success:(void(^)(void))success
                         failure:(void(^)(NSError *error))failure;
 
 /** If this note is not already shared (via its own direct URL), then this will start sharing that note. 
@@ -986,7 +986,7 @@ withResourcesAlternateData:(BOOL)withResourcesAlternateData
  @param failure Failure completion block.
  */
 - (void)stopSharingNoteWithGuid:(EDAMGuid)guid
-                        success:(void(^)())success
+                        success:(void(^)(void))success
                         failure:(void(^)(NSError *error))failure;
 
 /** Asks the service to produce an authentication token that can be used to access the contents of a single Note which was individually shared from someone's account. 
