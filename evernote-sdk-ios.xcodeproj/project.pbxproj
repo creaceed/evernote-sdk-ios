@@ -153,7 +153,6 @@
 		A9B1E88B16C2F99A00D54760 /* NSDataBase64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B1E88916C2F99A00D54760 /* NSDataBase64Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9B1E88C16C2F99A00D54760 /* NSDataBase64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B1E88A16C2F99A00D54760 /* NSDataBase64Additions.m */; };
 		A9B1E88D16C2F99A00D54760 /* NSDataBase64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B1E88A16C2F99A00D54760 /* NSDataBase64Additions.m */; };
-		A9B1E89016C31B9A00D54760 /* NoteBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B1E88E16C31B9900D54760 /* NoteBrowserViewController.h */; };
 		A9B1E89216C31B9A00D54760 /* NoteBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B1E88F16C31B9900D54760 /* NoteBrowserViewController.m */; };
 		A9B1E8A716C3265300D54760 /* ENApplicationBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B1E89416C3265300D54760 /* ENApplicationBridge.h */; };
 		A9B1E8A816C3265300D54760 /* ENApplicationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B1E89516C3265300D54760 /* ENApplicationBridge.m */; };
@@ -982,7 +981,6 @@
 				A9B1E86F16C2242200D54760 /* KSXMLAttributes.h in Headers */,
 				A9B1E87216C2242200D54760 /* KSXMLWriter.h in Headers */,
 				A9B1E87A16C2259F00D54760 /* NSString+XMLAdditions.h in Headers */,
-				A9B1E89016C31B9A00D54760 /* NoteBrowserViewController.h in Headers */,
 				A9B1E8A716C3265300D54760 /* ENApplicationBridge.h in Headers */,
 				A9B1E8AA16C3265300D54760 /* ENApplicationBridge_Private.h in Headers */,
 				A9B1E8AB16C3265300D54760 /* ENApplicationRequest.h in Headers */,

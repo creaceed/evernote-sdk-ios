@@ -718,6 +718,7 @@ NSString * const EvernoteSessionDidAuthenticatedUserNotification = @"EvernoteSes
                                                                                                allowSwitching:isSwitchAllowed
                                                                                                      delegate:self];
         UINavigationController *oauthNavController = [[UINavigationController alloc] initWithRootViewController:self.oauthViewController];
+        oauthNavController.modalPresentationStyle = UIModalPresentationFullScreen;
         
         // use a formsheet on iPad
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
